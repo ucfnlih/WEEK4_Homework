@@ -21,3 +21,4 @@ Join_HDI <- shape %>%
   left_join(., 
             HDIcols,
             by = c("iso" = "iso_code"))
+\t
