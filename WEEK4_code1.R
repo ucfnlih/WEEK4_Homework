@@ -9,6 +9,7 @@ HDI <- read_csv(here::here("HDR21-22_Composite_indices_complete_time_series.csv"
                 locale = locale(encoding = "latin1"),
                 na = " ", skip=0)
 ## Column names
+## clean_name make all column name the same
 HDIcols<- HDI %>%
   clean_names()%>%
   select(iso3, country, gii_2019, gii_2010)%>%
