@@ -4,7 +4,7 @@ library(here)
 library(janitor)
 library(countrycode)
 library(usethis)
-shape <- st_read("C:/Users/WD/Desktop/GIS/WEEK4_HW/World_Countries_(Generalized)/World_Countries__Generalized_.shp")
+use_github()shape <- st_read("C:/Users/WD/Desktop/GIS/WEEK4_HW/World_Countries_(Generalized)/World_Countries__Generalized_.shp")
 HDI <- read_csv(here::here("HDR21-22_Composite_indices_complete_time_series.csv"),
                 locale = locale(encoding = "latin1"),
                 na = " ", skip=0)
